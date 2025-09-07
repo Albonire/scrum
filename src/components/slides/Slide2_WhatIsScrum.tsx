@@ -9,7 +9,7 @@ const Slide2_WhatIsScrum: React.FC = () => {
       opacity: 1,
       scale: 1,
       transition: {
-        delay: i * 0.4 + 1, // Delay after text animation
+        delay: i * 0.3 + 1,
         duration: 0.5,
       },
     }),
@@ -23,7 +23,7 @@ const Slide2_WhatIsScrum: React.FC = () => {
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-6xl font-black mb-6"
+        className="text-6xl font-black text-gray-800 mb-6"
       >
         ¿Qué es Scrum?
       </motion.h2>
@@ -31,11 +31,11 @@ const Slide2_WhatIsScrum: React.FC = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.5 }}
-        className="text-2xl max-w-4xl mb-16 text-gray-300"
+        className="text-2xl max-w-4xl mb-16 text-gray-600"
       >
         Un marco de trabajo empírico para desarrollar, entregar y mantener productos complejos de forma iterativa e incremental.
       </motion.p>
-      <div className="flex items-center space-x-4">
+      <div className="flex items-center space-x-6">
         {items.map((item, i) => (
           <React.Fragment key={item}>
             <motion.div
@@ -43,7 +43,7 @@ const Slide2_WhatIsScrum: React.FC = () => {
               variants={cycleVariants}
               initial="hidden"
               animate="visible"
-              className="bg-black/20 border border-white/10 backdrop-blur-sm rounded-xl px-8 py-4 text-2xl font-bold"
+              className="bg-white shadow-lg rounded-xl px-8 py-4 text-2xl font-bold text-blue-600"
             >
               {item}
             </motion.div>
@@ -51,8 +51,8 @@ const Slide2_WhatIsScrum: React.FC = () => {
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: i * 0.4 + 1.3 }}
-                className="text-3xl text-blue-400 font-light"
+                transition={{ delay: i * 0.3 + 1.3 }}
+                className="text-3xl text-gray-400 font-light"
               >
                 →
               </motion.div>

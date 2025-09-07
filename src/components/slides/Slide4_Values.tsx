@@ -19,7 +19,7 @@ const Slide4_Values: React.FC = () => {
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
-        className="text-6xl font-black mb-12"
+        className="text-6xl font-black text-gray-800 mb-12"
       >
         Los 5 Valores de Scrum
       </motion.h2>
@@ -29,10 +29,10 @@ const Slide4_Values: React.FC = () => {
             <motion.button
               key={value.name}
               onClick={() => setSelectedValue(value)}
-              className={`w-full text-left p-4 rounded-lg text-2xl font-bold transition-colors duration-300 border ${
+              className={`w-full text-left p-4 rounded-lg text-2xl font-bold transition-all duration-300 ${
                 selectedValue.name === value.name 
-                  ? 'bg-blue-600 border-blue-500' 
-                  : 'bg-black/20 border-white/10 hover:bg-white/10'
+                  ? 'bg-blue-600 text-white shadow-lg' 
+                  : 'bg-white text-gray-700 hover:bg-gray-200'
               }`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -49,10 +49,10 @@ const Slide4_Values: React.FC = () => {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -50 }}
               transition={{ duration: 0.4 }}
-              className="bg-black/20 p-8 rounded-2xl shadow-2xl backdrop-blur-sm border border-white/10"
+              className="bg-white p-8 rounded-2xl shadow-2xl"
             >
-              <h3 className="text-4xl font-bold text-blue-400 mb-4">{selectedValue.name}</h3>
-              <p className="text-2xl text-gray-300">{selectedValue.description}</p>
+              <h3 className="text-4xl font-bold text-blue-600 mb-4">{selectedValue.name}</h3>
+              <p className="text-2xl text-gray-600">{selectedValue.description}</p>
             </motion.div>
           </AnimatePresence>
         </div>

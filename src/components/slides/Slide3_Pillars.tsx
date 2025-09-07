@@ -36,7 +36,7 @@ const Slide3_Pillars: React.FC = () => {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.7 }}
-        className="text-6xl font-black mb-16"
+        className="text-6xl font-black text-gray-800 mb-16"
       >
         Los 3 Pilares de Scrum
       </motion.h2>
@@ -48,11 +48,11 @@ const Slide3_Pillars: React.FC = () => {
             variants={cardVariants}
             initial="hidden"
             animate="visible"
-            whileHover={{ scale: 1.05, y: -10, boxShadow: "0px 20px 40px rgba(0,0,0,0.4)" }}
-            className="bg-black/20 p-8 rounded-2xl shadow-lg w-96 cursor-pointer backdrop-blur-sm border border-white/10"
+            whileHover={{ scale: 1.05, y: -10, boxShadow: "0px 20px 40px rgba(0,0,0,0.1)" }}
+            className="bg-white p-8 rounded-2xl shadow-lg w-96 cursor-pointer"
           >
-            <h3 className="text-4xl font-bold text-blue-400 mb-4">{pillar.title}</h3>
-            <p className="text-xl text-gray-300">{pillar.description}</p>
+            <h3 className="text-4xl font-bold text-blue-600 mb-4">{pillar.title}</h3>
+            <p className="text-xl text-gray-600">{pillar.description}</p>
           </motion.div>
         ))}
       </div>

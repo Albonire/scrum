@@ -9,7 +9,7 @@ const Slide1_Cover: React.FC = () => {
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-7xl font-black mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500"
+        className="text-7xl font-black text-gray-800 mb-4"
       >
         Scrum: Una Metodología Ágil
       </motion.h1>
@@ -17,12 +17,12 @@ const Slide1_Cover: React.FC = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.5 }}
-        className="text-xl space-y-2 mt-8 bg-black/20 p-6 rounded-xl backdrop-blur-sm border border-white/10"
+        className="text-xl space-y-2 mt-8 border-t-4 border-blue-500 pt-6"
       >
-        <p><strong className="text-blue-300">Nombre:</strong> Anderson Fabian Gonzalez Aparicio</p>
-        <p><strong className="text-blue-300">Código:</strong> 1097302218</p>
-        <p><strong className="text-blue-300">Curso:</strong> Investigación en Ingeniería de Sistemas</p>
-        <p><strong className="text-blue-300">Universidad:</strong> Universidad de Pamplona</p>
+        <p><strong className="font-semibold">Nombre:</strong> Anderson Fabian Gonzalez Aparicio</p>
+        <p><strong className="font-semibold">Código:</strong> 1097302218</p>
+        <p><strong className="font-semibold">Curso:</strong> Investigación en Ingeniería de Sistemas</p>
+        <p><strong className="font-semibold">Universidad:</strong> Universidad de Pamplona</p>
       </motion.div>
     </div>
   );

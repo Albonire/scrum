@@ -31,7 +31,7 @@ const Slide10_Advantages: React.FC = () => {
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-6xl font-black mb-12"
+        className="text-6xl font-black text-gray-800 mb-12"
       >
         Ventajas de Usar Scrum
       </motion.h2>
@@ -45,10 +45,10 @@ const Slide10_Advantages: React.FC = () => {
           <motion.div
             key={advantage.text}
             variants={itemVariants}
-            className="bg-black/20 p-6 rounded-2xl flex items-center space-x-6 backdrop-blur-sm border border-white/10"
+            className="bg-white p-6 rounded-2xl flex items-center space-x-6 shadow-lg"
           >
             <span className="text-5xl">{advantage.icon}</span>
-            <p className="text-2xl font-bold">{advantage.text}</p>
+            <p className="text-2xl font-bold text-gray-700">{advantage.text}</p>
           </motion.div>
         ))}
       </motion.div>

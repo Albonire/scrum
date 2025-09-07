@@ -28,7 +28,7 @@ const Slide8_Artifacts: React.FC = () => {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
-        className="text-6xl font-black mb-16"
+        className="text-6xl font-black text-gray-800 mb-16"
       >
         Los Artefactos de Scrum
       </motion.h2>
@@ -42,10 +42,10 @@ const Slide8_Artifacts: React.FC = () => {
           <motion.div
             key={artifact.name}
             variants={itemVariants}
-            className="bg-black/20 p-8 rounded-2xl shadow-xl w-1/3 mx-4 backdrop-blur-sm border border-white/10"
+            className="bg-white p-8 rounded-2xl shadow-xl w-1/3 mx-4"
           >
-            <h3 className="text-4xl font-bold text-blue-400 mb-4">{artifact.name}</h3>
-            <p className="text-xl text-gray-300">{artifact.description}</p>
+            <h3 className="text-4xl font-bold text-blue-600 mb-4">{artifact.name}</h3>
+            <p className="text-xl text-gray-600">{artifact.description}</p>
           </motion.div>
         ))}
       </motion.div>

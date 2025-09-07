@@ -43,7 +43,7 @@ const Slide5_Team: React.FC = () => {
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
-        className="text-6xl font-black mb-16"
+        className="text-6xl font-black text-gray-800 mb-16"
       >
         El Equipo Scrum
       </motion.h2>
@@ -58,11 +58,11 @@ const Slide5_Team: React.FC = () => {
             key={role.name}
             variants={itemVariants}
             whileHover={{ scale: 1.05, y: -10 }}
-            className="bg-black/20 p-8 rounded-2xl shadow-lg w-1/3 mx-4 text-center backdrop-blur-sm border border-white/10"
+            className="bg-white p-8 rounded-2xl shadow-lg w-1/3 mx-4 text-center"
           >
             <div className="text-6xl mb-4">{role.icon}</div>
-            <h3 className="text-4xl font-bold text-blue-400 mb-4">{role.name}</h3>
-            <p className="text-xl text-gray-300">{role.responsibilities}</p>
+            <h3 className="text-4xl font-bold text-blue-600 mb-4">{role.name}</h3>
+            <p className="text-xl text-gray-600">{role.responsibilities}</p>
           </motion.div>
         ))}
       </motion.div>

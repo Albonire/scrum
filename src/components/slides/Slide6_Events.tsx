@@ -30,7 +30,7 @@ const Slide6_Events: React.FC = () => {
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-6xl font-black mb-12"
+        className="text-6xl font-black text-gray-800 mb-12"
       >
         Los Eventos de Scrum
       </motion.h2>
@@ -40,11 +40,11 @@ const Slide6_Events: React.FC = () => {
         animate="visible"
         className="relative w-full max-w-4xl"
       >
-        <div className="absolute left-1/2 top-0 h-full w-1 bg-blue-500/30 rounded" />
+        <div className="absolute left-1/2 top-0 h-full w-1 bg-gray-200 rounded" />
         {events.map((event, index) => (
           <div key={event.name} className="relative flex items-center mb-12">
             <motion.div
-              className="absolute left-1/2 -translate-x-1/2 w-6 h-6 bg-blue-500 rounded-full border-4 border-gray-900"
+              className="absolute left-1/2 -translate-x-1/2 w-6 h-6 bg-blue-600 rounded-full border-4 border-gray-100"
               initial={{ scale: 0 }}
               animate={{ scale: 1, transition: { delay: index * 0.2 + 0.7 } }}
             />
@@ -52,8 +52,8 @@ const Slide6_Events: React.FC = () => {
               variants={itemVariants(index % 2 !== 0)}
               className={`w-1/2 p-6 ${index % 2 === 0 ? 'text-right pr-16' : 'ml-auto text-left pl-16'}`}
             >
-              <h3 className="text-3xl font-bold text-blue-400 mb-2">{event.name}</h3>
-              <p className="text-lg text-gray-300">{event.description}</p>
+              <h3 className="text-3xl font-bold text-blue-600 mb-2">{event.name}</h3>
+              <p className="text-lg text-gray-600">{event.description}</p>
             </motion.div>
           </div>
         ))}
